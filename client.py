@@ -9,5 +9,11 @@ while True:
     if msg == 'q':
         sock_client.close()
         break
-    print(sock_client.recv(500), '返回成功！')
+    elif msg:
+        print(sock_client.recv(500).decode())
+    else:
+        sock_client.close()
+        break
+
+
 
