@@ -12,6 +12,3 @@ def list_all(path): # Incoming a path
 
 
 list_all('E:')
-
-
-

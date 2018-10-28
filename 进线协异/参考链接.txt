@@ -1,0 +1,10 @@
+武沛齐线程、进程和协程
+http://www.cnblogs.com/wupeiqi/articles/5040827.html
+
+武沛齐多进,线,协 + 异步 + scrapy
+http://www.cnblogs.com/wupeiqi/articles/6229292.html
+
+小明  进程和协程
+http://www.dongwm.com/tags/multiprocessing/
+
+

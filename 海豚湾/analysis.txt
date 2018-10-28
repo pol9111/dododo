@@ -1,0 +1,38 @@
+<div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+
+<th>邀请码</th>
+
+ </tr>
+</thead>
+<tbody>
+<tr>
+
+<td>MCcR9PmySSOpRY1dY8cOeD7QQ40vMyTw&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/auth/register?code=MCcR9PmySSOpRY1dY8cOeD7QQ40vMyTw">点击使用</a></td>
+
+</tr>
+<tr>
+
+<td>WKDWooXDNixarXexPkRjbmyqpoZ6wSf7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/auth/register?code=WKDWooXDNixarXexPkRjbmyqpoZ6wSf7">点击使用</a></td>
+
+</tr>
+<tr>
+
+<td>4fL2cpE7YIGgxyFbZgVH1EUqV9F969rr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/auth/register?code=4fL2cpE7YIGgxyFbZgVH1EUqV9F969rr">点击使用</a></td>
+
+</tr>
+<tr>
+
+<td>8IoP82C7C5YGbcOe788NaDLME2ZTOTf9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/auth/register?code=8IoP82C7C5YGbcOe788NaDLME2ZTOTf9">点击使用</a></td>
+
+</tr>
+<tr>
+
+<td>Y5cuJL3Apba5Db0B0O9WdulmGKOZTKAj&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/auth/register?code=Y5cuJL3Apba5Db0B0O9WdulmGKOZTKAj">点击使用</a></td>
+
+</tr>
+</tbody>
+</table>
+</div>

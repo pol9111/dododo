@@ -1,0 +1,72 @@
+2018-08-27 11:17:12 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: s_redis)
+2018-08-27 11:17:12 [scrapy.utils.log] INFO: Versions: lxml 4.2.4.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-08-27 11:17:12 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 's_redis', 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': 'logs\\s_redis\\tieba3\\ae8c8e18a9a711e8b314089e018cd9b7.log', 'NEWSPIDER_MODULE': 's_redis.spiders', 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['s_redis.spiders']}
+2018-08-27 11:17:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-08-27 11:17:12 [tieba3] INFO: Reading start URLs from redis key 'tieba3spider:start_urls' (batch size: 16, encoding: utf-8
+2018-08-27 11:17:13 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-27 11:17:13 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-27 11:17:14 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_redis.pipelines.RedisPipeline']
+2018-08-27 11:17:14 [scrapy.core.engine] INFO: Spider opened
+2018-08-27 11:17:56 [twisted] CRITICAL: Unhandled error in Deferred:
+2018-08-27 11:17:56 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "f:\py_first\virtualenv\scrapy\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "f:\py_first\virtualenv\scrapy\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "f:\py_first\virtualenv\scrapy\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\py_first\virtualenv\scrapy\lib\site-packages\redis\client.py", line 667, in execute_command
+    connection.send_command(*args)
+  File "f:\py_first\virtualenv\scrapy\lib\site-packages\redis\connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "f:\py_first\virtualenv\scrapy\lib\site-packages\redis\connection.py", line 585, in send_packed_command
+    self.connect()
+  File "f:\py_first\virtualenv\scrapy\lib\site-packages\redis\connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10060 connecting to 192.168.1.4:6379. A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\py_first\virtualenv\scrapy\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "f:\py_first\virtualenv\scrapy\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "f:\py_first\virtualenv\scrapy\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\py_first\virtualenv\scrapy\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "f:\py_first\virtualenv\scrapy\lib\site-packages\scrapy\crawler.py", line 82, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+redis.exceptions.ConnectionError: Error 10060 connecting to 192.168.1.4:6379. A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
